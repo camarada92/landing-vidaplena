@@ -1,97 +1,46 @@
 # landing-vidaplena
 Evaluacion 1 - Frontend
+1.- Descripcion del proyecto
 
-prompts:
+En base a los requerimientos establecidos nace esta web con una interfaz sencilla e intuitiva, utilizando un diseño profesional que permita a los usuarios conocer la propuesta de valor de la marca.
 
-Como puedo centrar el texto de la columna central?
+2.- Instrucciones de uso
 
-/* Ajuste para que el formulario también se vea centrado y equilibrado */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;       /* Ocupa el ancho disponible */
-    max-width: 500px;  /* Limita el ancho para que no sea gigante */
-    margin: 0 auto;    /* Centra el formulario dentro del contenedor */
-    gap: 15px;
-}
+Para visualizar y ejecutar este proyecto correctamente en un entorno local:
 
-Como puedo aplicarle un efecto hover a mis tarjetas?
+2.1 Clonar el repositorio:
+Mediante git clone <https://github.com/camarada92/landing-vidaplena.git>
 
-.card {
-    background: #f4f4f4;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1;
-    
-    /* Efecto inicial de transición */
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
+2.2 Abrir el proyecto: Navega a la carpeta del proyecto y abre el archivo index.html en tu navegador web preferido.
 
-/* Efecto al pasar el mouse */
-.card:hover {
-    background-color: #5D4037; /* Cambia a tu color café corporativo */
-    color: white;              /* El texto se vuelve blanco para contrastar */
-    transform: translateY(-10px); /* La tarjeta sube un poco */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra para dar efecto de elevación */
-    cursor: pointer;
-}
+2.3 Navegación: Utiliza la barra de navegación superior (fija al scroll) para desplazarte entre las secciones de "Inicio", "Nuestro Equipo", "Beneficios", "Testimonios" y "Contacto".
 
-Como puedo alinear todas mis tarjetas horizontalmente?
+2.4 Interacción: Puedes observar los efectos visuales de hover en las tarjetas de beneficios y testimonios.
 
-.contenedor-tarjetas {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    width: 100%;
-    margin-top: 1.5rem; /* Separación entre el título y las tarjetas */
-}
+3.- Tecnologias utilizadas
 
-Quiero agregarle imagenes al lado de los testimonios, como puedo hacer para que la imagen tenga forma circular y a continuacion aparezca el testimonio?
+HTML5: Para la estructura semántica del contenido.
+CSS3: Para la estilización del sitio.
+Git/GitHub: Para el control de versiones y gestión del historial de cambios.
+Google Gemini: para consultas especificas y generacion de imagenes.
 
-<!-- TESTIMONIOS -->
-<section id="testimonios" class="Testimonios">
-    <h2>Lo que dicen nuestros clientes</h2>
-    
-    <article class="testimonial">
-        <img src="img/cliente1.jpg" alt="María G." class="foto-testimonio">
-        <div class="texto-testimonio">
-            <p>"Excelente servicio. Me ayudaron a encontrar el equilibrio que necesitaba."</p>
-            <cite>- María G.</cite>
-        </div>
-    </article>
+4.- Uso de IA
 
-    <article class="testimonial">
-        <img src="img/cliente2.jpg" alt="Juan P." class="foto-testimonio">
-        <div class="texto-testimonio">
-            <p>"El equipo es muy profesional y comprensivo. Recomiendo sus servicios."</p>
-            <cite>- Juan P.</cite>
-        </div>
-    </article>
-</section>
+En el desarrollo de este proyecto se utilizo:
+Microsoft Copilot: Se utilizo como apoyo mediante su funcion de sugerencia/autocompletado en base al contexto, casi la totalidad del archivo index y alrededor de la mitad del css se realizo con esta herramienta.
+Google Gemini: Se utilizo para generar el logo de la web, aplicar algunos estilos CSS y obtener fragmentos de codigo complementarios para la web.
 
-/* Contenedor del testimonio para alinear imagen y texto */
-.testimonial {
-    display: flex; /* Alinea imagen y texto horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    gap: 20px; /* Espacio entre la foto y el texto */
-    margin: 20px 0;
-    text-align: left; /* Alineamos a la izquierda dentro del bloque central */
-}
+5.- Prompts
 
-/* Estilo de la imagen circular */
-.foto-testimonio {
-    width: 80px; /* Tamaño de la foto */
-    height: 80px;
-    border-radius: 50%; /* Esto crea el círculo perfecto */
-    object-fit: cover; /* Evita que la imagen se deforme */
-    border: 3px solid #5D4037; /* Borde café para combinar con el estilo */
-}
+A continuacion, prompts utilizados para la realizacion de este proyecto.
 
-/* Opcional: Para que el bloque central no se vea desalineado */
-.Testimonios {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea los testimonios al inicio del contenedor */
-    width: 100%;
-}
+"Como puedo generar un efecto de transparencia en las columnas?"
+
+"Como puedo aplicarle un efecto hover a mis tarjetas?"
+
+"Como puedo alinear todas mis tarjetas horizontalmente?"
+
+"Quiero agregarle imagenes al lado de los testimonios, como puedo hacer para que la imagen tenga forma circular y a continuacion aparezca el testimonio?"
+
+"Como puedo agrupar el contenido de este texto?"
+
