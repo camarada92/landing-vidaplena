@@ -41,6 +41,12 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
 }
+h1, h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
 /* 2. HEADER Y NAVEGACIÓN */
 header {
@@ -78,7 +84,7 @@ main {
 }
 
 .columna-central {
-    background-color: rgba(255, 255, 255, 0.35); 
+    background-color: rgba(255, 255, 255, 0.85); 
     padding: 3rem;
     min-height: 100vh;  
     height: 100%;
@@ -87,6 +93,7 @@ main {
     align-items: center;
     text-align: center;
 }
+
 
 /* 4. SECCIONES Y BENEFICIOS (Flexbox) */
 .Beneficios {
@@ -102,12 +109,14 @@ main {
     justify-content: space-around;
     gap: 20px;
     width: 100%;
-    margin-top: 1.5rem; /* Separación entre el título y las tarjetas */
+    margin-top: 1.5rem; 
 }
 
 .card {
-    background: #f4f4f4;
+    background: #5D4037;
+    color: white;
     padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     text-align: center;
     flex: 1;
@@ -115,14 +124,15 @@ main {
 }
 
 .card:hover {
-    background-color: #5D4037; 
-    color: white;              
+    background-color:#795548;             
     transform: translateY(-10px); 
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 /* 5. TESTIMONIOS */
 .testimonial {
+    color: #1a1a1a;
+    font-weight: 500;
     display: flex; 
     align-items: center;
     gap: 20px; 
