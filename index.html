@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida Plena</title>
+    <link rel="stylesheet" href="CSS/styles.css"> 
 </head>
-    <body>
-        <!-- MENÚ -->
-        <nav>
-        <h1>Vida Plena</h1>
+<body>
+
+    <header>
+    <nav>
+        
+        <h1 class="logo-texto">Vida Plena</h1>
         <ul>
-            <li>Inicio</li>
-            <li>Nuestro Equipo</li>
-            <li>Beneficios</li>
-            <li>Testimonios</li>
-            <li>Contacto</li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#equipo">Nuestro Equipo</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
-        </nav>
+    </nav>
+</header>
 
-        <!-- HERO -->
-        <section>
-        <h1>Bienvenidos</h1>
-        <p>Tu bienestar integral comienza hoy: Soluciones personalizadas para una vida en equilibrio.</p>
-        <button onclick="bienvenida()">Comenzar</button>
+    <main>
+        <!-- Columna 1 -->
+        <div class="columna-oscura"></div>
+
+        <!-- Columna 2: Contenido central con transparencia -->
+        <div class="columna-central">
+            <!-- HERO -->
+            <section id="inicio">
+                <h1>Bienvenidos</h1>
+                <p>Tu bienestar integral comienza hoy: Soluciones personalizadas para una vida en equilibrio.</p>
+                <button type="button">Comenzar</button>
+            </section>
+
+            <!-- TARJETAS -->
+            <section id="beneficios" class="Beneficios">
+                <h2>Nuestros Beneficios</h2>
+                <div class="card">Atencion Personalizada</div>
+                <div class="card">Equipo Multidisciplinario</div>
+                <div class="card">Programas Personalizados</div>
+            </section>
+
+            <!-- TESTIMONIOS -->
+            <section id="testimonios" class="Testimonios">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonial">
+                    <p>"Excelente servicio. Me ayudaron a encontrar el equilibrio que necesitaba."</p>
+                    <cite>- María G.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"El equipo es muy profesional y comprensivo. Recomiendo sus servicios."</p>
+                    <cite>- Juan P.</cite>
+                </div>
+            </section>
+
+            <!-- FORMULARIO -->
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form>
+                    <input type="text" placeholder="Nombre" required />
+                    <input type="email" placeholder="Correo" required />
+                    <textarea placeholder="Mensaje"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="columna-oscura"></div>
+    </main>
+
+    <footer>
+        <p>Vida Plena, acompañandote en tu camino al bienestar.</p>
+    </footer>
         
-        </section>
-
-        <!-- TARJETAS -->
-
-        <section class="Beneficios">
-        <div class="card">Atencion Personalizada</div>
-        <div class="card">Equipo Multidisciplinario</div>
-        <div class="card">Programas Personalizados</div>
-        </section>
-
-        <!-- TESTIMONIOS -->
-        <section class="Testimonios">
-            <h2>Lo que dicen nuestros clientes</h2>
-            <div class="testimonial">
-                <p>"Excelente servicio. Me ayudaron a encontrar el equilibrio que necesitaba."</p>
-                <cite>- María G.</cite>
-            </div>
-            <div class="testimonial">
-                <p>"El equipo es muy profesional y comprensivo. Recomiendo sus servicios."</p>
-                <cite>- Juan P.</cite>
-            </div>
-        </section>
-
-        <!-- FORMULARIO -->
-        <section>
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Nombre" />
-            <input type="email" placeholder="Correo" />
-            <input type="text" placeholder="Mensaje" />
-            <button>Enviar</button>
-        </form>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>Vida Plena, acompañandote en tu camino al bienestar.</footer>
-        
-    </body>
+</body>
 </html>

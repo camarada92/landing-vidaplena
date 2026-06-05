@@ -1,0 +1,119 @@
+/* 1. ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ESTILO DEL LOGO */
+.logo-texto {
+    font-size: 2rem;           
+    font-weight: bold;         
+    color: #ffffff;            
+    letter-spacing: 2px;       
+}
+
+/* ESTILO DE LOS ENLACES DE NAVEGACION */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;                 
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;     
+    font-weight: 500;
+    transition: color 0.3s;    
+}
+
+/* ESTILO HOVER EN LOS ENLACES DE NAVEGACION */
+header nav ul li a:hover {
+    color: #D7CCC8;            
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('../imagenes/logo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* 2. HEADER Y NAVEGACIÓN */
+header {
+    background-color: rgba(93, 64, 55, 0.8);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* 3. LAYOUT DE COLUMNAS (Grid) */
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.columna-oscura {
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: 100vh;
+}
+
+.columna-central {
+    background-color: rgba(255, 255, 255, 0.35); 
+    padding: 3rem;
+    min-height: 100vh;  
+    height: 100%;
+}
+
+/* 4. SECCIONES Y BENEFICIOS (Flexbox) */
+.Beneficios {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 2rem 0;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+/* 5. FORMULARIO Y FOOTER */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: rgba(93, 64, 55, 0.8);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
